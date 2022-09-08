@@ -1,2 +1,1 @@
-# alx-low_level_programming
-I am a full stack alx software engineering student 
+This repository contains files related to low level programming using the c programmming language
