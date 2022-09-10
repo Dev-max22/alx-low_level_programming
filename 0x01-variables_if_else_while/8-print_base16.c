@@ -1,22 +1,28 @@
+ble File  26 lines (22 sloc)  340 Bytes
 
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return:0
+ * main - print the letters of the alphabet
+ *
+ * Description: print the letters of the alphabet except e, q
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i, y;
-	for (i = 0; i < 10; i++)
-	{
-		putchar (i + '0');
-	}
-	for (y = 'a'; y <= 'f'; y++)
-	{
-		putchar (y);
-	}
+	int i = 0;
 
-putchar('\n');
-return (0);
+	while (i < 48)
+	{
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
+		i++;
+	}
+	putchar(10);
+
+	return (0);
 }
